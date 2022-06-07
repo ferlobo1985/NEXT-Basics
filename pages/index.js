@@ -1,4 +1,5 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import Image from 'next/image';
 
 const HomePage = () => {
   return(
@@ -18,6 +19,15 @@ const HomePage = () => {
           <Link href="/contact">Contact</Link>
         </li>
       </ul>
+
+      <Image
+        src="/images/image_one.jpg"
+        alt="Picture about a horse"
+        layout="responsive"
+        width={6016}
+        height={4016}
+      />
+
     </>
   )
 }
